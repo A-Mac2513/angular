@@ -1,0 +1,32 @@
+<form
+  [formGroup]="inputForm"
+  (ngSubmit)="output.emit(inputForm.value)"
+  #form="ngForm"
+>
+  <div class="row">
+    <div [class]="_inputFloatingText.className" *ngFor="let _inputFloatingText of _inputFloatingTexts">
+        <div class="form-floating">
+          <input
+            [id]="_inputFloatingText.id"
+            [type]="_inputFloatingText.type"
+            [formControlName]="_inputFloatingText.name"
+            [placeholder]="_inputFloatingText.placeholder"
+            [readonly]="_inputFloatingText.readonly"
+            class="form-control"
+            (input)="formOutput(_inputFloatingText)"
+          />
+          <label [for]="_inputFloatingText.id">{{ _inputFloatingText.label }}</label>
+        </div>
+      <div
+        *ngIf="getTouched(_inputFloatingText.name)"
+        class="alert text-start alert-text-danger m-0 p-0"
+      >
+        <div *ngIf="getError(_inputFloatingText)">
+          <div *ngFor="let error of errors">
+            {{ error }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

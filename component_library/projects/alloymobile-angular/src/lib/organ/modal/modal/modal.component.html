@@ -1,0 +1,37 @@
+<div
+  [class]="_modal.className"
+  [id]="_modal.id"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+  role="dialog"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          {{ _modal.action + " a "+ _modal.title }}
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <alloy-input-icon-texts [inputIconTexts]="_modal.fields" (output)="getText($event)"></alloy-input-icon-texts>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-dark"
+          data-bs-dismiss="modal"
+        >
+          Cancel
+        </button>
+        <alloy-button [button]="_modal.submit" (output)="submitData(_modal.action)"></alloy-button>
+      </div>
+    </div>
+  </div>
+</div>

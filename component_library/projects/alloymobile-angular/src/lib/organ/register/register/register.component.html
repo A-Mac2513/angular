@@ -1,0 +1,14 @@
+<div [id]="_register.id" class="d-flex justify-content-center flex-column text-center h-100 mt-3">
+  <div class="row">
+      <div [class]="_register.className">
+          <alloy-form [form]="_register.registerForm" (output)="output.emit($event)"></alloy-form>
+          <div class="p-2">
+              <small class="form-text ml-2">
+                By clicking signup you agree to our
+                <alloy-link [link]="_register.privacyLink"></alloy-link>and<alloy-link [link]="_register.termsLink"></alloy-link>
+                 Please click them for more details.
+              </small>
+          </div>
+      </div>
+  </div>
+</div>

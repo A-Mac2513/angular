@@ -1,0 +1,40 @@
+{
+  "sidebar":{
+    "id":1,
+    "className":"list-group h-100",
+    "selected": "border border-dark",
+    "linkIcon":
+    [
+      {"name":"Icon","className":"list-group-item list-group-item-action","link":"/","active":"","icon":{"id":1,"icon":"faIcons","size":"lg","spin":false,"className":""}},
+      {"name":"Icon Link","className":"list-group-item list-group-item-action","link":"icon-link","active":"","icon":{"id":1,"icon":"faLink","size":"lg","spin":false,"className":""}},
+      {"name":"Icon Button","className":"list-group-item list-group-item-action","link":"icon-button","active":"","icon":{"id":1,"icon":"faBorderAll","size":"lg","spin":false,"className":""}},
+      {"name":"Link","className":"list-group-item list-group-item-action","link":"link","active":"","icon":{"id":2,"icon":"faLink","size":"lg","spin":false,"className":""}},
+      {"name":"Link Icon","className":"list-group-item list-group-item-action","link":"link-icon","active":"","icon":{"id":2,"icon":"faGlobe","size":"lg","spin":false,"className":""}},
+      {"name":"Link Logo","className":"list-group-item list-group-item-action","link":"link-logo","icon":{"id":2,"icon":"faInternetExplorer","size":"lg","spin":false,"className":""}},
+      {"name":"Button","className":"list-group-item list-group-item-action","link":"button","icon":{"id":3,"icon":"faToggleOff","size":"lg","spin":false,"className":""}},
+      {"name":"Button Icon","className":"list-group-item list-group-item-action","link":"button-icon","icon":{"id":3,"icon":"faToggleOn","size":"lg","spin":false,"className":""}},
+      {"name":"Button Submit","className":"list-group-item list-group-item-action","link":"button-submit","icon":{"id":3,"icon":"faPlay","size":"lg","spin":false,"className":""}},
+      {"name":"InputBox","className":"list-group-item list-group-item-action","link":"input","icon":{"id":4,"icon":"faKeyboard","size":"lg","spin":false,"className":""}}
+    ]
+  },
+  "sample":{
+    "id":"cardAddress",
+    "className": "card border m-2 shadow",
+    "body":{"id":"body","className":"card-body d-flex flex-row curser","name":"Card Body"},
+    "link":"user",
+    "icon":{"id":"icon28","icon":"faLocationDot","size":"2x","spin":false,"className":"p-1"},
+    "iconClass":"m-3",
+    "fields":[
+        {"id":"address","className":"card-title h5 col-sm-12","name":""},
+        {"id":"city","className":"card-text col-sm-6","name":""},
+        {"id":"province","className":"card-text col-sm-6","name":""},
+        {"id":"country","className":"card-text col-sm-6","name":""},
+        {"id":"postalCode","className":"card-text col-sm-6","name":""}
+    ],
+    "footer":{"id":"footer","className":"input-group justify-content-end p-2","name":"AlloyIconButton"},
+    "actions":[
+        {"id":"action1","className":"btn btn-outline-dark btn-sm m-1 p-2","name":"Edit","icon":{"id":"icon28","icon":"faEdit","size":"lg","spin":false,"className":""}},
+        {"id":"action2","className":"btn btn-outline-dark btn-sm m-1 p-2","name":"Delete","icon":{"id":"icon28","icon":"faTrash","size":"lg","spin":false,"className":""}}
+    ]
+  }
+}

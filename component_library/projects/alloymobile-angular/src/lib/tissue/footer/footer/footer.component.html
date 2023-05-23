@@ -1,0 +1,25 @@
+<footer [class]="_footer.className" [id]="_footer.id">
+	<div class="container">
+		<div class="row mx-auto">
+			<div class="col-lg-6 mx-auto text-center my-5">
+				<!-- Logo -->
+                <alloy-link-logo [linkLogo]="_footer.logo"></alloy-link-logo>
+				<p class="mt-3 text-white">{{_footer.title}}</p>
+                <!-- Links -->
+                <ul class="nav justify-content-center text-primary-hover mt-3 mt-md-0">
+                    <li *ngFor="let i of _footer.link" class="nav-item">
+                        <alloy-link [link]="i"></alloy-link>
+                    </li>
+				</ul>
+				<!-- Social media button -->
+				<ul class="list-inline mt-3 mb-0">
+					<li class="list-inline-item" *ngFor="let i of _footer.social"> 
+                        <alloy-icon-link [iconLink]="i"></alloy-icon-link>
+					</li>
+				</ul>
+                <!-- Bottom footer link -->
+				<div class="mt-3 text-white">©2021 <a href="https://www.alloymobile.com/" class="text-reset btn-link text-primary-hover" target="_blank">AlloyMobile</a>. All rights reserved. </div>
+			</div>
+		</div>
+	</div>
+</footer>

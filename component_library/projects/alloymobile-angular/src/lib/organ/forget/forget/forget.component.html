@@ -1,0 +1,13 @@
+<div [id]="_forget.id" class="d-flex justify-content-center flex-column text-center h-100 mt-3" >
+  <div class="row">
+      <div [class]="_forget.className">
+          <alloy-form [form]="_forget.forgetForm" (output)="output.emit($event)"></alloy-form>
+          <div class="px-2">
+            <small id="codeHelp" class="form-text text-dark ml-2">
+              Please enter your email to receive the reset password link.
+            </small>
+            <alloy-link [link]="_forget.loginLink"></alloy-link>
+          </div>
+      </div>
+  </div>
+</div>

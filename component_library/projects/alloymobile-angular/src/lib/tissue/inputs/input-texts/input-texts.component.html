@@ -1,0 +1,30 @@
+<form
+  [formGroup]="inputForm"
+  (ngSubmit)="output.emit(inputForm.value)"
+  #form="ngForm"
+>
+  <div class="row">
+    <div [class]="_inputText.className" *ngFor="let _inputText of _inputTexts">
+      <label [for]="_inputText.id" class="form-label m-2">{{ _inputText.label }}</label>
+      <input
+        [id]="_inputText.id"
+        [type]="_inputText.type"
+        [formControlName]="_inputText.name"
+        [placeholder]="_inputText.placeholder"
+        [readonly]="_inputText.readonly"
+        class="form-control"
+        (input)="formOutput(_inputText)"
+      />
+      <div
+        *ngIf="getTouched(_inputText.name)"
+        class="alert text-start alert-text-danger m-0 p-0"
+      >
+        <div *ngIf="getError(_inputText)">
+          <div *ngFor="let error of errors">
+            {{ error }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

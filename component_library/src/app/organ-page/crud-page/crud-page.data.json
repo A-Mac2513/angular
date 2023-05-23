@@ -1,0 +1,164 @@
+{
+    "toast":{
+        "id":"","className":"",
+        "modalFile":
+        {
+            "id":"myModal","title":"File","action":"Add",
+            "file":{"id":"2","name":"name","className":"form-floating mb-3","type":"file","label":"Upload file","placeholder":"Upload file"}
+        },
+        "modalToast":
+        {
+            "id":"deleteModal","title":"File","action":"Delete","message":"Are you sure!","className":"modal fade",
+            "submit":{"id":"1","name":"Delete","className":"btn btn-outline-dark border-0","type":"submit"}
+    
+        },
+        "table":
+        {
+            "id":"table","className":"table table-striped table-hover","link":"/table","name":"Files",
+            "icon":{"id":1,"icon":"faFilePdf","size":"lg","spin":false,"className":""},
+            "rows":
+            [
+                {"id":"1","name":"Hello","url":"12-12-2022"},
+                {"id":"1","name":"T4","url":"12-12-2022"},
+                {"id":"1","name":"Return","url":"12-12-2022"}
+            ]
+        }
+    },
+    "modal":{
+        "id":"","className":"",
+        "modal":
+        {
+            "id":"myModal","title":"File","action":"Add","className":"modal fade","submit":{"id":"1","name":"Delete","className":"btn btn-outline-dark","type":"submit"},
+            "fields":[
+                {"id":"1","name":"id","className":"input-group p-2","type":"text","text":"","placeholder":"id","readonly":true,"label":"id","icon":{"id":1,"icon":"faUser","size":"lg","spin":false,"className":""}},
+                {"id":"2","name":"name","className":"input-group p-2","type":"text","text":"","placeholder":"Name","readonly":false,"label":"Name","icon":{"id":1,"icon":"faFolder","size":"lg","spin":false,"className":""}}
+            ]
+        },
+        "table":
+        {
+            "id":"table","className":"table table-striped table-hover","link":"./","name":"Folders",
+            "icon":{"id":1,"icon":"faFilePdf","size":"lg","spin":false,"className":""},
+            "actions":
+            [
+                {"id":"Edit","icon":"faEdit","size":"lg","spin":false,"className":""},
+                {"id":"Delete","icon":"faTrashAlt","size":"lg","spin":false,"className":""}
+            ],
+            "rows":
+            [
+                {"id":"1","name":"Hello","url":"12-12-2022"},
+                {"id":"1","name":"T4","url":"12-12-2022"},
+                {"id":"1","name":"Return","url":"12-12-2022"}
+            ]
+        }
+    },
+    "modalFile":{
+        "id":"","className":"",
+        "modalFile":
+        {
+            "id":"myModal","title":"File","action":"Add","className":"modal fade","submit":{"id":"1","name":"Add","className":"btn btn-outline-dark","type":"submit"},
+            "file":{"id":"2","name":"name","className":"form-floating mb-3","type":"file","label":"Upload file","placeholder":"Upload file"}
+        },
+        "modalToast":
+        {
+            "id":"deleteModal","title":"File","action":"Delete","message":"Are you sure!","className":"modal fade",
+            "submit":{"id":"1","name":"Delete","className":"btn btn-outline-dark border-0","type":"submit"}
+    
+        },
+        "table":
+        {
+            "id":"table","className":"table table-striped table-hover table-responsive table-sm","link":"./","name":"Files",
+            "icon":{"id":1,"icon":"faFilePdf","size":"lg","spin":false,"className":""},
+            "actions":
+            [
+                {"id":"Delete","icon":"faTrashAlt","size":"lg","spin":false,"className":""}
+            ],
+            "rows":
+            [
+                {"id":"1","name":"Hello","url":"12-12-2022","checked": false },
+                {"id":"2","name":"T4","url":"12-12-2022","checked": false },
+                {"id":"3","name":"Return","url":"12-12-2022","checked": false }
+            ]
+        }
+    },  
+    "details":
+    {
+        "id": "details",
+        "className":"col-md-12 col-lg-6 col-xl-4",
+        "type": "AlloyCardImageAction",
+        "modal":
+        {
+            "id":"myModal","title":"Address","action":"Add","className":"modal fade","submit":{"id":"1","name":"Edit","className":"btn btn-outline-dark","type":"submit"},
+            "fields":[
+                {"id":"profile6","name":"address","className":"col-lg-12 border-top mt-3",
+                "errors":[
+                    {"name":"required","message":"Complete address is required.","pattern":""}             
+                    ],"type":"text","text":"","placeholder":"address","readonly":false,"label":"Address*","icon":{"id":1,"icon":"faAddressCard","size":"lg","spin":false,"className":""}
+                },
+                {"id":"profile7","name":"city","className":"col-lg-6",
+                "errors":[
+                    {"name":"required","message":"City is required.","pattern":""}             
+                    ],"type":"text","text":"","placeholder":"city","readonly":false,"label":"City*","icon":{"id":1,"icon":"faLocation","size":"lg","spin":false,"className":""}
+                },
+                {"id":"profile8","name":"province","className":"col-lg-6",
+                "errors":[
+                    {"name":"required","message":"Province is required.","pattern":""}             
+                    ],"type":"text","text":"","placeholder":"province","readonly":false,"label":"Province*","icon":{"id":1,"icon":"faMap","size":"lg","spin":false,"className":""}
+                },
+                {"id":"profile9","name":"country","className":"col-lg-6",
+                "errors":[
+                    {"name":"required","message":"Country is required.","pattern":""}             
+                    ],"type":"text","text":"","placeholder":"country","readonly":false,"label":"Country*","icon":{"id":1,"icon":"faFlag","size":"lg","spin":false,"className":""}
+                },
+                {"id":"profile10","name":"postalCode","className":"col-lg-6",
+                "errors":[
+                    {"name":"required","message":"Postal code is required.","pattern":""}             
+                    ],"type":"text","text":"","placeholder":"postalCode","readonly":false,"label":"Postal Code*","icon":{"id":1,"icon":"faMapPin","size":"lg","spin":false,"className":""}
+                }            
+            ]
+        },
+        "cards":[
+            {
+                "id":"cardAddress1",
+                "className": "card border m-2 shadow",
+                "header":{"id":"header","className":"card-header","name":"Billing"},
+                "body":{"id":"body","className":"card-body row curser","name":"Card Body"},
+                "icon":{"id":"icon28","icon":"faEdit","size":"lg","spin":false,"className":""},
+                "link":"role",
+                "fields":[
+                    {"id":"address","className":"card-title h5 col-sm-12","name":"33 Alderney Avenue"},
+                    {"id":"city","className":"card-text col-sm-6","name":"Hamilton"},
+                    {"id":"province","className":"card-text col-sm-6","name":"Ontario"},
+                    {"id":"country","className":"card-text col-sm-6","name":"Canada"},
+                    {"id":"postalCode","className":"card-text col-sm-6","name":"L9A2A6"}
+                ],
+                "footer":{"id":"footer","className":"input-group justify-content-end p-2","name":"AlloyIconButton"},
+                "type":"AlloyIconButton",
+                "actions":[
+                    {"id":"action1","className":"btn btn-outline-dark btn-sm m-1 p-2","name":"Edit","icon":{"id":"icon28","icon":"faEdit","size":"lg","spin":false,"className":""}},
+                    {"id":"action2","className":"btn btn-outline-dark btn-sm m-1 p-2","name":"Delete","icon":{"id":"icon28","icon":"faTrash","size":"lg","spin":false,"className":""}}
+                ]
+            },
+            {
+                "id":"cardAddress2",
+                "className": "card border m-2 shadow",
+                "header":{"id":"header","className":"card-header","name":"Card head"},
+                "body":{"id":"body","className":"card-body row curser","name":"Card Body"},
+                "icon":{"id":"icon28","icon":"faEdit","size":"lg","spin":false,"className":""},
+                "link":"role",
+                "fields":[
+                    {"id":"address","className":"card-title h5 col-sm-12","name":"33 Alderney Avenue"},
+                    {"id":"city","className":"card-text col-sm-6","name":"Hamilton"},
+                    {"id":"province","className":"card-text col-sm-6","name":"Ontario"},
+                    {"id":"country","className":"card-text col-sm-6","name":"Canada"},
+                    {"id":"postalCode","className":"card-text col-sm-6","name":"L9A2A6"}
+                ],
+                "footer":{"id":"footer","className":"input-group justify-content-end p-2","name":"AlloyIconButton"},
+                "type":"AlloyIconButton",
+                "actions":[
+                    {"id":"action1","className":"btn btn-outline-dark btn-sm m-1 p-2","name":"Edit","icon":{"id":"icon28","icon":"faEdit","size":"lg","spin":false,"className":""}},
+                    {"id":"action2","className":"btn btn-outline-dark btn-sm m-1 p-2","name":"Delete","icon":{"id":"icon28","icon":"faTrash","size":"lg","spin":false,"className":""}}
+                ]
+            }
+        ] 
+    }   
+}

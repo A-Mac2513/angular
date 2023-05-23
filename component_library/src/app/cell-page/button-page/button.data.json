@@ -1,0 +1,15 @@
+{
+    "buttons":
+    [
+        {"name":"Home","className":"btn btn-outline-dark rounded px-1 shadow","active":"","type":"button"},
+        {"name":"About","className":"btn btn-secondary rounded-circle px-1","active":"","type":"button"},
+        {"name":"Terms","className":"btn btn-primary rounded-pill px-1","active":"","type":"button"},
+        {"name":"Privacy","className":"btn btn-success border border-5 border-dark px-1","active":"","type":"button"},
+        {"name":"Blog","className":"fs-2 btn btn-warning","active":"","type":"button"},
+        {"name":"Contact","className":"btn btn-outline-info border-0 btn-sm rounded px-1 shadow","active":"","type":"button"}
+    ],
+    "submitButtons":[
+        {"id":"1","name":"Submit","className":"w-100 btn btn-lg btn-info mt-1","type":"submit","disable":true,"show":false,
+        "icon":{"id":31,"icon":"faSpinner","size":"lg","spin":true,"className":""}}    
+    ]
+}

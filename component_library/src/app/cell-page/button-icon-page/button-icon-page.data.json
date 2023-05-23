@@ -1,0 +1,11 @@
+{
+    "buttonIcons":
+    [
+        {"name":"Home","className":"btn btn-outline-dark rounded px-1 shadow","active":"","type":"button","icon":{"icon":"faHome","size":"lg","spin":false,"className":"text-secondary"}},
+        {"name":"About","className":"btn btn-secondary rounded-circle px-1","active":"","type":"button","icon":{"icon":"faTableColumns","size":"lg","spin":false,"className":"text-secondary"}},
+        {"name":"Terms","className":"btn btn-primary rounded-pill px-1","active":"","type":"button","icon":{"icon":"faUser","size":"lg","spin":false,"className":"text-secondary"}},
+        {"name":"Privacy","className":"btn btn-success border border-5 border-dark px-1","active":"","type":"button","icon":{"icon":"faUserLock","size":"lg","spin":false,"className":"text-secondary"}},
+        {"name":"Blog","className":"fs-2 nav-link","active":"","type":"button","icon":{"icon":"faPhoneAlt","size":"lg","spin":false,"className":"text-secondary"}},
+        {"name":"Contact","className":"btn btn-outline-info border-0 btn-sm rounded px-1 shadow","active":"","type":"button","icon":{"icon":"faMicrochip","size":"lg","spin":false,"className":"text-secondary"}}
+    ]
+}

@@ -1,0 +1,8 @@
+<div [id]="_searchBar.id" [class]="_searchBar.className">
+    <div class="col-12 col-md-8">
+        <alloy-input-text-icon-label [inputTextIconLabel]="_searchBar.search" (output)="searchOutput($event)"></alloy-input-text-icon-label>
+    </div>
+    <div class="col-12 col-md-4 d-flex justify-content-end">
+        <alloy-button-icon [buttonIcon]="_searchBar.upload" (output)="searchOutput($event)"></alloy-button-icon>
+    </div>
+</div>

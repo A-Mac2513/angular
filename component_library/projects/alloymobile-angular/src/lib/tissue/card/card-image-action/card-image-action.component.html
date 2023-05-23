@@ -1,0 +1,42 @@
+<div [id]="_cardImageAction.id" [class]="_cardImageAction.className">
+  <div
+    [id]="_cardImageAction.body.id"
+    [class]="_cardImageAction.body.className"
+    [attr.aria-label]="_cardImageAction.body.name"
+  >
+    <div [class]="_cardImageAction.imageClass">
+      <img
+        src="{{ _cardImageAction.image.imageUrl }}"
+        [alt]="_cardImageAction.image.alt"
+        [attr.width]="_cardImageAction.image.width"
+        [attr.height]="_cardImageAction.image.height"
+      />
+    </div>
+    <div [class]="_cardImageAction.textClass">
+      <div class="row p-1">
+        <div
+          [id]="field.id"
+          [class]="field.className"
+          *ngFor="let field of _cardImageAction.fields"
+        >
+          {{ field.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    [id]="_cardImageAction.action.id"
+    [class]="_cardImageAction.action.className"
+    role="group"
+    [ngSwitch]="_cardImageAction.type"
+  >
+    <div *ngSwitchCase="'AlloyButtonBar'">
+      <alloy-button-bar [buttonBar]="_cardImageAction.action" ></alloy-button-bar>
+    </div>
+    <div *ngSwitchCase="'AlloyLinkBar'">
+    </div>
+    <div *ngSwitchDefault>
+      <alloy-link-bar [linkBar]="_cardImageAction.action"></alloy-link-bar>
+    </div>
+  </div>
+</div>

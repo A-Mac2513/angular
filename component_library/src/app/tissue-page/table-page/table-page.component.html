@@ -1,0 +1,10 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+            <alloy-table [table]="table" (output)="selectedRow($event)"></alloy-table>
+        </div>
+        <div class="col-sm-6">
+            <alloy-table-action [tableAction]="table" (output)="selectedRow($event)"></alloy-table-action>
+        </div>
+    </div>
+</div>

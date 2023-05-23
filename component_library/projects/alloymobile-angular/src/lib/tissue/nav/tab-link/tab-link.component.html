@@ -1,0 +1,8 @@
+<div [id]="_tabLink.id" [class]="_tabLink.className">
+    <div [class]="_tabLink.tabClass">
+        <div class="nav-item" *ngFor="let i of _tabLink.tabs">
+            <alloy-link-icon [linkIcon]="i" (output)="getSelected(i)"></alloy-link-icon>
+        </div>
+    </div>
+</div>
+

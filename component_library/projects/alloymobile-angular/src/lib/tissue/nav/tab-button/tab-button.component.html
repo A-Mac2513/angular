@@ -1,0 +1,5 @@
+<div [id]="_tabButton.id" [class]="_tabButton.className">
+    <div class="nav-item" *ngFor="let i of _tabButton.tabs">
+        <alloy-button-icon [buttonIcon]="i" (output)="getSelected(i)"></alloy-button-icon>
+    </div>
+</div>

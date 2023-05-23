@@ -1,0 +1,22 @@
+<div [id]="_cardIcon.id" [class]="_cardIcon.className" [routerLink]="[_cardIcon.link]">
+  <div
+  [id]="_cardIcon.body.id"
+  [class]="_cardIcon.body.className"
+  [attr.aria-label]="_cardIcon.body.name"
+  >
+    <div [class]="_cardIcon.iconClass">
+      <alloy-icon [icon]="_cardIcon.icon"></alloy-icon>
+    </div>
+    <div [class]="_cardIcon.textClass">
+      <div class="row p-1">
+        <div
+        [id]="field.id"
+        [class]="field.className"
+        *ngFor="let field of _cardIcon.fields"
+      >
+        {{ field.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

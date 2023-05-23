@@ -1,0 +1,25 @@
+{
+    "footer":
+    {
+      "id":1,
+      "title":"Eduport education theme, built specifically for the education centers which is dedicated to teaching and involving learners.",
+      "className":"bg-info container-fluid",
+      "logo":{"id":1,"name":"AlloyMobile","className":"mx-auto text-white fs-5","link":"https://alloymobile.com","logo":{"image":"https://alloymobile.blob.core.windows.net/alloymobile/alloymobile.png","alt":"AlloyMobile","width":"36","height":"auto"}},
+      "link":
+      [
+        {"id":1,"name":"Home","className":"nav-link text-white","link":""},
+        {"id":2,"name":"About","className":"nav-link text-white","link":"about"},
+        {"id":3,"name":"Terms","className":"nav-link text-white","link":"terms"},
+        {"id":4,"name":"Privacy","className":"nav-link text-white","link":"privacy"},
+        {"id":4,"name":"Contact","className":"nav-link text-white","link":"contact"}
+      ],
+      "social": 
+      [
+        {"id":"social1","className":"btn btn-outline-white btn-sm p-2 border-0","link":"https://www.facebook.com/","icon":{"id":31,"icon":"faFacebook","size":"2x","spin":false,"className":""}},
+        {"id":"social2","className":"btn btn-outline-white btn-sm p-2 border-0","link":"https://twitter.com/","icon":{"id":32,"icon":"faTwitter","size":"2x","spin":false,"className":""}},
+        {"id":"social3","className":"btn btn-outline-white btn-sm p-2 border-0","link":"https://www.youtube.com/","icon":{"id":33,"icon":"faYoutube","size":"2x","spin":false,"className":""}},
+        {"id":"social4","className":"btn btn-outline-white btn-sm p-2 border-0","link":"https://www.linkedin.com/","icon":{"id":34,"icon":"faLinkedin","size":"2x","spin":false,"className":""}},
+        {"id":"social5","className":"btn btn-outline-white btn-sm p-2 border-0","link":"https://www.instagram.com/","icon":{"id":35,"icon":"faInstagram","size":"2x","spin":false,"className":""}}
+      ]  
+    }
+}

@@ -1,0 +1,30 @@
+<!-- <alloy-clientbar [clientBar]="clientBar" (output)="back($event)"></alloy-clientbar> -->
+<alloy-navbar-icon [navBarIcon]="navBar"></alloy-navbar-icon>
+  <div class="main">
+    <div class="container-fluid">
+      <ul class="nav nav-tabs nav-fill">
+          <li class="nav-item" [ngClass]="{' border-bottom border-5 border-dark': selected === 'cell'}">
+            <button class="nav-link text-dark" [ngClass]="{'active': selected === 'cell'}" aria-current="page" (click)="setActive('cell')" >Cell</button>
+          </li>
+          <li class="nav-item" [ngClass]="{' border-bottom border-5 border-dark': selected === 'tissue'}">
+            <button class="nav-link text-dark" [ngClass]="{'active': selected === 'tissue'}" (click)="setActive('tissue')" >Tissue</button>
+          </li>
+          <li class="nav-item" [ngClass]="{' border-bottom border-5 border-dark': selected === 'organ'}">
+            <button class="nav-link text-dark" [ngClass]="{'active': selected === 'organ'}" (click)="setActive('organ')" >Organ</button>
+          </li>
+        </ul>
+        <router-outlet></router-outlet>  
+    </div>
+</div>
+
+  <!-- <div class="container-fluid">
+    <div class="col-12">
+      <alloy-tab-link [tabLink]="tabBar"></alloy-tab-link>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div> -->
+

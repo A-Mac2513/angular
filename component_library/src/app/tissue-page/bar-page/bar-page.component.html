@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 text-center border-end border-dark border-2">
+          <h4>Bars</h4>
+          <alloy-tab-button [tabButton]="usageBar" (output)="getSelected($event)"></alloy-tab-button>
+            <div class="m-2" *ngIf="tab.id == 'tab1'">
+                <div class="row">
+                    <div class="col-12 p-1 my-3 text-center border rounded" (mouseenter)="onBarClick(linkBar)">
+                        <alloy-link-bar [linkBar]="linkBar" (output)="onclick($event)"></alloy-link-bar>
+                    </div>
+                    <div class="col-12 p-1  my-3 text-center border rounded" (mouseenter)="onBarClick(linkIconBar)">
+                        <alloy-link-bar [linkBar]="linkIconBar"  (output)="onclick($event)"></alloy-link-bar>
+                    </div>
+                    <div class="col-12 p-1 my-3 text-center border rounded" (mouseenter)="onBarClick(iconLinkBar)">
+                        <alloy-link-bar [linkBar]="iconLinkBar"  (output)="onclick($event)"></alloy-link-bar>
+                    </div>
+                </div>
+            </div>
+            <div class="m-2" *ngIf="tab.id == 'tab2'">
+                <div class="row">
+                    <div class="col-12 p-1 my-3 text-center border rounded" (click)="onBarClick(buttonBar)">
+                        <alloy-button-bar [buttonBar]="buttonBar"  (output)="onclick($event)"></alloy-button-bar>
+                    </div>
+                    <div class="col-12 p-1  my-3 text-center border rounded" (click)="onBarClick(buttonIconBar)">
+                        <alloy-button-bar [buttonBar]="buttonIconBar"  (output)="onclick($event)"></alloy-button-bar>
+                    </div>
+                    <div class="col-12 p-1 my-3 text-center border rounded" (click)="onBarClick(iconBar)">
+                        <alloy-button-bar [buttonBar]="iconBar"  (output)="onclick($event)"></alloy-button-bar>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 text-center text-wrap">
+        <h4>Usage</h4>
+        <div class="container-fluid d-flex flex-column">
+            <div class="m-2">
+              <h6 class="border border-dark rounded-pill p-2">{{usageString}}</h6>
+            </div>
+            <div class="m-2 text-wrap">
+                <h6>Output</h6>
+                <p class="border border-dark rounded-pill p-2">{{outputString}}</p>
+            </div>
+            <div class="m-2">
+              <div class="form-group p-2">
+                <label for="tryOut">Try Out</label>
+                <textarea type="text" class="form-control border border-dark rounded" id="tryOut" rows="20" [(ngModel)]="exampleData" (blur)="update()"></textarea>
+              </div>
+            </div>
+        </div>   
+      </div>
+  </div>
+</div>

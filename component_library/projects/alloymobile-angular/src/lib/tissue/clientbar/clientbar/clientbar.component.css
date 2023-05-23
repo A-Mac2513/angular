@@ -1,0 +1,9 @@
+.bar{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .bar{
+    display: block;
+  }
+}

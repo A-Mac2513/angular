@@ -1,0 +1,28 @@
+{
+    "id":"1",
+    "className":"col-sm-12 mx-auto m-3",
+    "loginForm":
+    {
+        "id":"Login",
+        "title":"Sign in",
+        "message":"",
+        "action":"Login",
+        "className":"col m-2",
+        "submit":{"id":"1","name":"Submit","className":"w-100 btn btn-lg btn-info mt-1","type":"submit","disable":true,"show":false,
+        "icon":{"id":31,"icon":"faSpinner","size":"lg","spin":true,"className":""}},
+        "fields":[
+            {"id":"1","name":"email","className":"col-sm-12",
+            "errors":[
+                {"name":"required","message":"Email is required.","pattern":""},
+                {"name":"email","message":"Provide a valid email address.","pattern":""}
+                ],"type":"email","text":"","placeholder":"email","readonly":false,"label":"Email","icon":{"id":1,"icon":"faEnvelope","size":"lg","spin":false,"className":""}},
+            {"id":"2","name":"password","className":"col-sm-12",
+            "errors":[
+                {"name":"required","message":"Password is required.","pattern":""},
+                {"name":"minLength","message":"Password should be minimum of 8 charactors.","pattern":"8"},
+                {"name":"pattern","message":"Mix of numbers, special character, upper and lower case characters.","pattern": "(?=.*[A-Za-z])(?=.*[0-9])(?=.*[$@$!#^~%*?&,.<>\"'\\;:{\\}\\[\\]\\|\\+\\-\\=\\_\\)\\(\\)\\`\\/\\\\\\]])[A-Za-z0-9d$@].{7,}"}
+                ],"type":"password","text":"","placeholder":"password","readonly":false,"label":"Password","icon":{"id":1,"icon":"faKey","size":"lg","spin":false,"className":""}}
+        ]
+    },
+    "forgetPassword":{"id":"forgetPassword","name":"Forget Password","link":"forget","className":"nav-link"}
+}

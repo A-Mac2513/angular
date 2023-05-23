@@ -1,0 +1,27 @@
+<div [id]="_cardImage.id" [class]="_cardImage.className"  [routerLink]="[_cardImage.link]">
+  <div
+  [id]="_cardImage.body.id"
+  [class]="_cardImage.body.className"
+  [attr.aria-label]="_cardImage.body.name"
+  >
+    <div [class]="_cardImage.imageClass">
+      <img
+        src="{{ _cardImage.image.imageUrl }}"
+        [alt]="_cardImage.image.alt"
+        [attr.width]="_cardImage.image.width"
+        [attr.height]="_cardImage.image.height"
+      />
+    </div>
+    <div [class]="_cardImage.textClass">
+      <div class="row p-1">
+        <div
+          [id]="field.id"
+          [class]="field.className"
+          *ngFor="let field of _cardImage.fields"
+        >
+          {{ field.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

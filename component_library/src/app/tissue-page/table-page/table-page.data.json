@@ -1,0 +1,22 @@
+{
+    "id":"table","className":"table table-striped table-hover","link":"/table","name":"Folders",
+    "icon":{"id":1,"icon":"faFolder","size":"lg","spin":false,"className":""},
+    "actions":
+    [
+        {"id":"Edit","icon":"faEdit","size":"lg","spin":false,"className":""},
+        {"id":"Delete","icon":"faTrashAlt","size":"lg","spin":false,"className":""}
+    ],
+    "rows":
+    [
+        {"id":"1","name":"Hello","date":"12-01-2022"},
+        {"id":"1","name":"T4","date":"12-01-2022"},
+        {"id":"1","name":"Return","date":"12-01-2022"}
+    ],
+    "modal":{
+        "id":"myModal","title":"Create Folder","open":false,
+        "fields":
+        [
+            {"id":"1","name":"name","className":"input-group mb-3","typeName":"text","placeholder":"tax 2022","label":"Folder name","icon":{"id":1,"icon":"faFolder","size":"lg","spin":false,"className":""}}
+        ]
+    }
+}

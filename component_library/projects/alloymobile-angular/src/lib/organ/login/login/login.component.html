@@ -1,0 +1,13 @@
+<div [id]="_login.id" class="d-flex justify-content-center flex-column text-center h-100 mt-3">
+  <div class="row">
+      <div [class]="_login.className">
+          <alloy-form [form]="_login.loginForm" (output)="output.emit($event)"></alloy-form>
+          <div class="d-flex justify-content-between mx-3">
+            <div class="checkbox mb-3">
+              <label> <input type="checkbox" value="remember-me" /> Remember me </label>
+            </div>
+            <alloy-link [link]="_login.forgetPassword"></alloy-link>
+          </div>
+      </div>
+  </div>
+</div>

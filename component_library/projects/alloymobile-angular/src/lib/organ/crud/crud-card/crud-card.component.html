@@ -1,0 +1,29 @@
+<div class="row mt-2">
+    <div class="col-sm-12 text-end">
+        <alloy-icon-button [iconButton]="addButton" (output)="onClicked({action:'Add'})"></alloy-icon-button>
+    </div>
+  </div>
+<div [id]="_crudCard.id" class="row">
+    <div [ngSwitch]="_crudCard.type">
+        <div *ngSwitchCase="'AlloyCardAction'">
+            <div [class]="_crudCard.className" *ngFor="let i of _crudCard.cards">
+                <alloy-card-action [cardAction]="i" (output)="onClicked($event)"></alloy-card-action>
+            </div>
+        </div>
+        <div *ngSwitchCase="'AlloyCardIconAction'">
+            <div [class]="_crudCard.className" *ngFor="let i of _crudCard.cards">
+                <alloy-card-icon-action [cardIconAction]="i" (output)="onClicked($event)"></alloy-card-icon-action>
+            </div>
+        </div>
+        <div *ngSwitchCase="'AlloyCardImageAction'">
+            <div [class]="_crudCard.className" *ngFor="let i of _crudCard.cards">
+                <alloy-card-image-action [cardImageAction]="i" (output)="onClicked($event)"></alloy-card-image-action>
+            </div>
+        </div>
+        <div *ngSwitchDefault>
+            <alloy-card-action [cardAction]="i" (output)="onClicked($event)"></alloy-card-action>
+        </div>
+    </div>
+</div>
+
+<alloy-modal [modal]="_crudCard.modal" (output)="submitData($event)"></alloy-modal>

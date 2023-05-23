@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 text-center border-end border-dark border-2">
+          <h4>Links</h4>
+          <div class="row">
+              <div class="col-md-6 col-xl-4 p-1 text-center border rounded" *ngFor="let i of links">
+                  <div class="" (click)="linkClick(i)">
+                      <alloy-link [link]="i"></alloy-link>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-6 text-center text-wrap">
+        <h4>Usage</h4>
+        <div class="container-fluid d-flex flex-column">
+            <div class="m-2">
+              <h6 class="border border-dark rounded-pill p-2">{{usageString}}</h6>
+            </div>
+            <div class="m-2">
+              <div class="form-group p-2">
+                <label for="tryOut">Try Out</label>
+                <div class=" m-2">
+                  <alloy-link [link]="example"></alloy-link>
+                </div>
+                <textarea type="text" class="form-control border border-dark rounded" id="tryOut" rows="20" [(ngModel)]="exampleData" (blur)="update()"></textarea>
+              </div>
+            </div>
+        </div>   
+      </div>
+  </div>
+</div>

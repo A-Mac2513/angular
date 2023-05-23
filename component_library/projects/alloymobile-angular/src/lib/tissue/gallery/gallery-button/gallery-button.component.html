@@ -1,0 +1,8 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-1" *ngFor="let buttonIcon of _galleryButtons">
+            <alloy-button-icon [buttonIcon]="buttonIcon" (output)="onButtonSelect($event)"></alloy-button-icon>
+        </div>
+    </div>
+</div>

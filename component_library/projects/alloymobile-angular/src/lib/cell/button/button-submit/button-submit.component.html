@@ -1,0 +1,11 @@
+<button
+  [id]="_buttonSubmit.id"
+  [class]="_buttonSubmit.className"
+  [type]="_buttonSubmit.type"
+  (click)="output.emit(_buttonSubmit)"
+  [disabled]="_buttonSubmit.disable"
+>
+  <alloy-icon *ngIf="_buttonSubmit.show" [icon]="_buttonSubmit.icon" ></alloy-icon>
+  <span class="px-2">{{_buttonSubmit.name}}</span>
+</button>
+

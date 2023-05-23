@@ -1,0 +1,8 @@
+<div [id]="_reset.id" class="d-flex justify-content-center flex-column text-center h-100 mt-3">
+  <div class="row">
+      <div [class]="_reset.className">
+          <alloy-form [form]="_reset.resetForm" (output)="output.emit($event)"></alloy-form>
+      </div>
+      <alloy-link [link]="_reset.loginLink"></alloy-link>
+  </div>
+</div>

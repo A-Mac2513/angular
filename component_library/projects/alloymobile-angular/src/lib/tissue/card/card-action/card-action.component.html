@@ -1,0 +1,30 @@
+<div [id]="_cardAction.id" [class]="_cardAction.className">
+  <div
+    [id]="_cardAction.body.id"
+    [class]="_cardAction.body.className"
+    [attr.aria-label]="_cardAction.body.name"
+  >
+    <div
+      [id]="field.id"
+      [class]="field.className"
+      *ngFor="let field of _cardAction.fields"
+    >
+      {{ field.name }}
+    </div>
+  </div>
+  <div
+    [id]="_cardAction.action.id"
+    [class]="_cardAction.action.className"
+    role="group"
+    [ngSwitch]="_cardAction.type"
+  >
+    <div *ngSwitchCase="'AlloyButtonBar'">
+      <alloy-button-bar [buttonBar]="_cardAction.action" ></alloy-button-bar>
+    </div>
+    <div *ngSwitchCase="'AlloyLinkBar'">
+    </div>
+    <div *ngSwitchDefault>
+      <alloy-link-bar [linkBar]="_cardAction.action"></alloy-link-bar>
+    </div>
+  </div>
+</div>

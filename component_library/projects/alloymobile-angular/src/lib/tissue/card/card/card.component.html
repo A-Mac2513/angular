@@ -1,0 +1,15 @@
+<div [id]="_card.id" [class]="_card.className" [routerLink]="[_card.link]">
+  <div
+  [id]="_card.body.id"
+  [class]="_card.body.className"
+  [attr.aria-label]="_card.body.name"
+  >
+    <div
+      [id]="field.id"
+      [class]="field.className"
+      *ngFor="let field of _card.fields"
+    >
+      {{ field.name }}
+    </div>
+  </div>
+</div>

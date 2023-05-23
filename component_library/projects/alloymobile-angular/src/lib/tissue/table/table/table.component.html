@@ -1,0 +1,25 @@
+<table [class]="_table.className" [id]="_table.id">
+  <caption class="caption-top text-center">{{_table.name}}</caption>
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+        <th
+          scope="col"
+          *ngFor="let h of _table.rows[0] | keyvalue"
+        >
+          <span *ngIf="h.key != 'id'">{{ capitalize(h.key) }}</span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let body of _table.rows; index as j" >
+        <td>
+          <alloy-icon [icon]="_table.icon"></alloy-icon>
+        </td>
+        <td  class="cursor"  *ngFor="let col of body | keyvalue" [routerLink]="[_table.link+'/'+body.id]">
+          <a *ngIf="col.key != 'id'">{{ col.value }}</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  

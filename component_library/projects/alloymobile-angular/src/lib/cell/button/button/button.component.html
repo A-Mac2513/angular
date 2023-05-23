@@ -1,0 +1,9 @@
+<button
+  [id]="_button.id"
+  [class]="_button.className+' '+ _button.active"
+  [type]="_button.type"
+  (click)="output.emit(_button)"
+>
+  <span class="px-2">{{_button.name}}</span>
+</button>
+

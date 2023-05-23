@@ -1,0 +1,23 @@
+<div class="row">
+    <div [class]="_form.className">
+        <div class="text-center">
+            <h3>{{_form.title}}</h3>
+            <div class="alert alert-text-danger m-0 p-0" *ngIf="_form.message != ''">{{ _form.message }}</div>
+            <div [ngSwitch]="_form.type">
+                <div *ngSwitchCase="'AlloyInputTextIcon'">
+                    <alloy-input-icon-texts [inputIconTexts]="_form.fields" (output)="getText($event)"></alloy-input-icon-texts>
+                </div>
+                <div *ngSwitchCase="'AlloyInputFloatingText'">
+                    <alloy-input-floating-texts [inputFloatingTexts]="_form.fields" (output)="getText($event)"></alloy-input-floating-texts>
+                </div>
+                <div *ngSwitchCase="'AlloyInputText'">
+                    <alloy-input-texts [inputTexts]="_form.fields" (output)="getText($event)"></alloy-input-texts>
+                </div>
+                <div *ngSwitchDefault>
+                    <alloy-input-icon-texts [inputIconTexts]="_form.fields" (output)="getText($event)"></alloy-input-icon-texts>
+                </div>
+            </div>
+            <alloy-button-submit [buttonSubmit]="_form.submit" (output)="submitData(_form.action)"></alloy-button-submit>
+        </div>
+    </div>
+</div>

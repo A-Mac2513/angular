@@ -1,0 +1,35 @@
+<header [id]="_navBar.id" [class]="_navBar.className">
+    <!-- Logo Nav START -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- Logo START -->
+          <alloy-link-logo [linkLogo]="_navBar.logo"></alloy-link-logo>
+        <!-- Logo END -->
+  
+        <!-- Responsive navbar toggler -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-animation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+  
+        <!-- Main navbar START -->
+        <div
+          class="navbar-collapse collapse justify-content-end"
+          id="navbarCollapse"
+        >
+          <!-- Nav Search END -->
+          <ul class="navbar-nav navbar-nav-scroll">
+            <!-- Nav item 4 link-->
+            <li *ngFor="let i of _navBar.link" class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <alloy-link [link]="i"></alloy-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Logo Nav END -->
+</header>
+  

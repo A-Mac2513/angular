@@ -1,0 +1,195 @@
+{
+    "tabBar":{
+        "id":"tabBar",
+        "className":"nav nav-tabs nav-fill justify-content-center",
+        "selected":"active",
+        "tabs":[
+            {"id":"tab1","name":"Icon","className":"nav-link text-dark","active":"","type":"button","icon":{"id":"icon1","icon":"faKeyboard","size":"sm","spin":false,"className":""}},
+            {"id":"tab2","name":"Floating","className":"nav-link text-dark","active":"","type":"button","icon":{"id":"icon2","icon":"faKeyboard","size":"sm","spin":false,"className":""}},
+            {"id":"tab3","name":"Text","className":"nav-link text-dark","active":"","type":"button","icon":{"id":"icon3","icon":"faKeyboard","size":"sm","spin":false,"className":""}}
+        ]
+    },
+    "inputIcons":
+    [
+        {"name":"email","className":"col-sm-12",
+        "errors":[
+            {"name":"required","message":"Email is required.","pattern":""},
+            {"name":"email","message":"Provide a valid email address.","pattern":""}                
+            ],"type":"email","text":"","placeholder":"email","readonly":true,"label":"Email*","icon":{"icon":"faEnvelope","size":"lg","spin":false,"className":""}
+        },
+        {"id":"2","name":"password","className":"col-sm-12",
+        "errors":[
+            {"name":"required","message":"Password is required.","pattern":""},
+            {"name":"minLength","message":"Password should be minimum of 8 charactors.","pattern":"8"},
+            {"name":"pattern","message":"Mix of numbers, special character, upper and lower case characters.","pattern": "(?=.*[A-Za-z])(?=.*[0-9])(?=.*[$@$!#^~%*?&,.<>\"'\\;:{\\}\\[\\]\\|\\+\\-\\=\\_\\)\\(\\)\\`\\/\\\\\\]])[A-Za-z0-9d$@].{7,}"}
+            ],"type":"password","text":"","placeholder":"password","readonly":false,"label":"Password","icon":{"icon":"faKey","size":"lg","spin":false,"className":""}
+        },
+        {"name":"name","className":"col-sm-12",
+        "errors":[
+            {"name":"required","message":"Full name is required.","pattern":""}             
+            ],"type":"text","text":"","placeholder":"name","readonly":false,"label":"Full Name*","icon":{"icon":"faSignature","size":"lg","spin":false,"className":""}
+        },
+        {"name":"amount","className":"col-sm-12",
+        "errors":[
+            {"name":"required","message":"Amount is required.","pattern":""}             
+            ],"type":"number","text":"","placeholder":"amount","readonly":false,"label":"Amount","icon":{"icon":"faDollarSign","size":"lg","spin":false,"className":""}
+        },
+        {"name":"search","className":"col-sm-12","type":"search","text":"","placeholder":"Search...","readonly":false,"label":"Search...","icon":{"icon":"faSearch","size":"lg","spin":false,"className":""}
+        },
+        {"name":"details","className":"col-12","type":"textarea","text":"","height":"100px","placeholder":"Home Details","readonly":false,"label":"Home Details*",
+        "errors":[
+            {"name":"required","message":"Home details is required.","pattern":""}             
+            ]
+        },
+        {"name":"image","className":"col-12",
+        "errors":[
+            {"name":"required","message":"Image is required.","pattern":""}             
+            ],"type":"file","text":"","placeholder":"Add a image","readonly":false,"label":"Add a image*","icon":{"icon":"faCamera","size":"lg","spin":false,"className":""}
+        },
+        {"name":"address","className":"col-12",
+        "errors":[
+            {"name":"required","message":"Complete address is required.","pattern":""}             
+            ],"type":"text","text":"","placeholder":"address","readonly":false,"label":"Address*","icon":{"icon":"faAddressCard","size":"lg","spin":false,"className":""}
+        },
+        {"name":"date","className":"col-12",
+        "errors":[
+            {"name":"required","message":"Select a date is required.","pattern":""}             
+            ],"type":"date","text":"","placeholder":"date","readonly":false,"label":"Date*","icon":{"icon":"faCalendar","size":"lg","spin":false,"className":""}
+        },
+        {"name":"country","className":"col-12","type":"select","text":"","placeholder":"country","readonly":false,"label":"Country*",
+        "options":["Canada","USA"],
+        "errors":[
+            {"name":"required","message":"Country is required.","pattern":""}             
+        ]
+        },
+        {"name":"hydro","className":"col-12","type":"checkbox","text":"","placeholder":"","readonly":false,"label":"Hydro",
+        "errors":[
+            {"name":"required","message":"Hydro is required.","pattern":""}             
+            ]
+        }, 
+        {"name":"gender","className":"col-12","type":"radio","text":"","placeholder":"","readonly":false,"label":"Male",
+        "errors":[
+                {"name":"required","message":"Gender is required.","pattern":""}             
+            ]
+        }           
+    ],
+    "inputTexts":
+    [
+        {"name":"email","className":"col-sm-12",
+        "errors":[
+            {"name":"required","message":"Email is required.","pattern":""},
+            {"name":"email","message":"Provide a valid email address.","pattern":""}                
+            ],"type":"email","text":"","placeholder":"email","readonly":true,"label":"Email*"
+        },
+        {"id":"2","name":"password","className":"col-sm-12",
+        "errors":[
+            {"name":"required","message":"Password is required.","pattern":""},
+            {"name":"minLength","message":"Password should be minimum of 8 charactors.","pattern":"8"},
+            {"name":"pattern","message":"Mix of numbers, special character, upper and lower case characters.","pattern": "(?=.*[A-Za-z])(?=.*[0-9])(?=.*[$@$!#^~%*?&,.<>\"'\\;:{\\}\\[\\]\\|\\+\\-\\=\\_\\)\\(\\)\\`\\/\\\\\\]])[A-Za-z0-9d$@].{7,}"}
+            ],"type":"password","text":"","placeholder":"password","readonly":false,"label":"Password"
+        },
+        {"name":"name","className":"col-sm-12",
+        "errors":[
+            {"name":"required","message":"Full name is required.","pattern":""}             
+            ],"type":"text","text":"","placeholder":"name","readonly":false,"label":"Full Name*"
+        },
+        {"name":"amount","className":"col-sm-12",
+        "errors":[
+            {"name":"required","message":"Amount is required.","pattern":""}             
+            ],"type":"number","text":"","placeholder":"amount","readonly":false,"label":"Amount"
+        },
+        {"name":"search","className":"col-sm-12","type":"search","text":"","placeholder":"Search...","readonly":false,"label":"Search..."
+        },
+        {"name":"details","className":"col-12","type":"textarea","text":"","height":"100px","placeholder":"Home Details","readonly":false,"label":"Home Details*",
+        "errors":[
+            {"name":"required","message":"Home details is required.","pattern":""}             
+            ]
+        },
+        {"name":"image","className":"col-12",
+        "errors":[
+            {"name":"required","message":"Image is required.","pattern":""}             
+            ],"type":"file","text":"","placeholder":"Add a image","readonly":false,"label":"Add a image*"
+        },
+        {"name":"address","className":"col-12",
+        "errors":[
+            {"name":"required","message":"Complete address is required.","pattern":""}             
+            ],"type":"text","text":"","placeholder":"address","readonly":false,"label":"Address*"
+        },
+        {"name":"country","className":"col-12","type":"select","text":"","placeholder":"country","readonly":false,"label":"Country*",
+        "options":["Canada","USA"],
+        "errors":[
+            {"name":"required","message":"Country is required.","pattern":""}             
+        ]
+        },
+        {"name":"hydro","className":"col-12","type":"checkbox","text":"","placeholder":"","readonly":false,"label":"Hydro",
+        "errors":[
+            {"name":"required","message":"Hydro is required.","pattern":""}             
+            ]
+        }, 
+        {"name":"gender","className":"col-12","type":"radio","text":"","placeholder":"","readonly":false,"label":"Male",
+        "errors":[
+                {"name":"required","message":"Gender is required.","pattern":""}             
+            ]
+        }           
+    ],
+    "inputFloatingTexts":
+    [
+        {"name":"email","className":"col-sm-12",
+        "errors":[
+            {"name":"required","message":"Email is required.","pattern":""},
+            {"name":"email","message":"Provide a valid email address.","pattern":""}                
+            ],"type":"email","text":"","placeholder":"email","readonly":true,"label":"Email*"
+        },
+        {"id":"2","name":"password","className":"col-sm-12",
+        "errors":[
+            {"name":"required","message":"Password is required.","pattern":""},
+            {"name":"minLength","message":"Password should be minimum of 8 charactors.","pattern":"8"},
+            {"name":"pattern","message":"Mix of numbers, special character, upper and lower case characters.","pattern": "(?=.*[A-Za-z])(?=.*[0-9])(?=.*[$@$!#^~%*?&,.<>\"'\\;:{\\}\\[\\]\\|\\+\\-\\=\\_\\)\\(\\)\\`\\/\\\\\\]])[A-Za-z0-9d$@].{7,}"}
+            ],"type":"password","text":"","placeholder":"password","readonly":false,"label":"Password"
+        },
+        {"name":"name","className":"col-sm-12",
+        "errors":[
+            {"name":"required","message":"Full name is required.","pattern":""}             
+            ],"type":"text","text":"","placeholder":"name","readonly":false,"label":"Full Name*"
+        },
+        {"name":"amount","className":"col-sm-12",
+        "errors":[
+            {"name":"required","message":"Amount name is required.","pattern":""}             
+            ],"type":"number","text":"","placeholder":"amount","readonly":false,"label":"Amount"
+        },
+        {"name":"search","className":"col-sm-12","type":"search","text":"","placeholder":"Search...","readonly":false,"label":"Search..."
+        },
+        {"id":"input1","name":"details","className":"col-12","type":"textarea","text":"","height":"100px","placeholder":"Home Details","readonly":false,"label":"Home Details*",
+        "errors":[
+            {"name":"required","message":"Home details is required.","pattern":""}             
+            ]
+        },
+        {"name":"image","className":"col-12",
+        "errors":[
+            {"name":"required","message":"Image is required.","pattern":""}             
+            ],"type":"file","text":"","placeholder":"Add a image","readonly":false,"label":"Add a image*"
+        },
+        {"name":"address","className":"col-12",
+        "errors":[
+            {"name":"required","message":"Complete address is required.","pattern":""}             
+            ],"type":"text","text":"","placeholder":"address","readonly":false,"label":"Address*"
+        },
+        {"name":"country","className":"col-12","type":"select","text":"","placeholder":"country","readonly":false,"label":"Country*",
+        "options":["Canada","USA"],
+        "errors":[
+            {"name":"required","message":"Country is required.","pattern":""}             
+        ]
+        },
+        {"name":"hydro","className":"col-12","type":"checkbox","text":"","placeholder":"","readonly":false,"label":"Hydro",
+        "errors":[
+            {"name":"required","message":"Hydro is required.","pattern":""}             
+            ]
+        }, 
+        {"name":"gender","className":"col-12","type":"radio","text":"","placeholder":"","readonly":false,"label":"Male",
+        "errors":[
+                {"name":"required","message":"Gender is required.","pattern":""}             
+            ]
+        }           
+    ]
+}
+

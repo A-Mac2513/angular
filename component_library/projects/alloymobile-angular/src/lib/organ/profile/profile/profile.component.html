@@ -1,0 +1,26 @@
+<div [class]="_profile.className">
+    <div class="row m-2">
+        <div class="col-md-12 col-lg-3">
+            <div class="card h-100">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                    <div class="m-2 text-center p-3 border bg-dark rounded-circle">
+                        <alloy-icon [icon]="profileIcon"></alloy-icon>
+                    </div>
+                    <div class="text-center">
+                        <span>{{name}}</span>
+                    </div>
+                    <div class="text-center">
+                        <span>{{email}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-9">
+            <alloy-form [form]="_profile.profileForm" (output)="output.emit($event)"></alloy-form>
+        </div>
+    </div>
+    <hr>
+    <h4>Address: </h4>
+    <alloy-crud-card [crudCard]="_profile.details" (output)="submitData($event)"></alloy-crud-card>
+  </div>
+  

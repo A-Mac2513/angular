@@ -1,0 +1,32 @@
+{
+    "id":"reset",
+    "className":"col-sm-12 mx-auto m-3",
+    "resetForm":
+    {
+        "id":"resetForm",
+        "title":"Reset Password",
+        "message":"",
+        "action":"reset",
+        "className":"col m-2",
+        "submit":{"id":"1","name":"Submit","className":"w-100 btn btn-lg btn-info mt-1","type":"submit","disable":true,"show":false,
+        "icon":{"id":31,"icon":"faSpinner","size":"lg","spin":true,"className":""}},
+        "fields":[
+            {"id":"reset1","name":"password","className":"col-sm-12",
+            "errors":[
+                {"name":"required","message":"Password is required.","pattern":""},
+                {"name":"minLength","message":"Password should be minimum of 8 charactors.","pattern":"8"},
+                {"name":"pattern","message":"Mix of numbers, special character, upper and lower case characters.","pattern": "(?=.*[A-Za-z])(?=.*[0-9])(?=.*[$@$!#^~%*?&,.<>\"'\\;:{\\}\\[\\]\\|\\+\\-\\=\\_\\)\\(\\)\\`\\/\\\\\\]])[A-Za-z0-9d$@].{7,}"}
+                ],"type":"password","text":"","placeholder":"password","readonly":false,"label":"Password*","icon":{"id":1,"icon":"faKey","size":"lg","spin":false,"className":""}
+            },
+            {"id":"reset2","name":"confirmPassword","className":"col-sm-12","match":true,
+            "errors":[
+                {"name":"required","message":"*Confirm Password password is required.","pattern":""},
+                {"name":"minLength","message":"*Confirm Password password should be minimum of 8 charactors.","pattern":"8"},
+                {"name":"pattern","message":"*Mix of numbers, special character, upper and lower case characters.","pattern": "(?=.*[A-Za-z])(?=.*[0-9])(?=.*[$@$!#^~%*?&,.<>\"'\\;:{\\}\\[\\]\\|\\+\\-\\=\\_\\)\\(\\)\\`\\/\\\\\\]])[A-Za-z0-9d$@].{7,}"},
+                {"name":"mismatch","message":"*Confirm password different from password.","pattern":"","type":"passwordStrength"}
+                ],"type":"password","text":"","placeholder":"Confirm Password","readonly":false,"label":"Confirm Password*","icon":{"id":1,"icon":"faKey","size":"lg","spin":false,"className":""}
+            }
+        ]
+    },
+    "loginLink":{"id":"login","name":"Login","link":"login","className":"nav-link"}
+}

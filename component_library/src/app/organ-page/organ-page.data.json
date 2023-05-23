@@ -1,0 +1,15 @@
+{
+  "sidebar":{
+    "id":1,
+    "className":"list-group h-100",
+    "linkIcon":
+    [
+      {"id":1,"name":"Login","className":"list-group-item list-group-item-action","link":"organ","icon":{"id":1,"icon":"faUser","size":"lg","spin":false,"className":""}},
+      {"id":2,"name":"Register","className":"list-group-item list-group-item-action","link":"organ/register","icon":{"id":2,"icon":"faUser","size":"lg","spin":false,"className":""}},
+      {"id":3,"name":"Forget","className":"list-group-item list-group-item-action","link":"organ/forget","icon":{"id":3,"icon":"faCamera","size":"lg","spin":false,"className":""}},
+      {"id":4,"name":"Reset","className":"list-group-item list-group-item-action","link":"organ/reset","icon":{"id":3,"icon":"faCamera","size":"lg","spin":false,"className":""}},
+      {"id":5,"name":"Code","className":"list-group-item list-group-item-action","link":"organ/code","icon":{"id":4,"icon":"faBlog","size":"lg","spin":false,"className":""}},
+      {"id":6,"name":"Crud","className":"list-group-item list-group-item-action","link":"organ/crud","icon":{"id":3,"icon":"faChalkboardTeacher","size":"lg","spin":false,"className":""}}
+    ]
+  }
+}

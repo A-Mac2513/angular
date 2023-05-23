@@ -1,0 +1,22 @@
+{
+    "id":"1",
+    "className":"col-sm-12 mx-auto m-3",
+    "forgetForm":
+    {
+        "id":"Forget",
+        "title":"Forget Password",
+        "message":"",
+        "action":"Forget",
+        "className":"col m-2",
+        "submit":{"id":"1","name":"Submit","className":"w-100 btn btn-lg btn-info mt-1","type":"submit","disable":true,"show":false,
+        "icon":{"id":31,"icon":"faSpinner","size":"lg","spin":true,"className":""}},
+        "fields":[
+            {"id":"Forget1","name":"email","className":"col-sm-12",
+            "errors":[
+                {"name":"required","message":"Email is required.","pattern":""},
+                {"name":"email","message":"Provide a valid email address.","pattern":""}
+                ],"type":"email","text":"","placeholder":"email","readonly":false,"label":"Email","icon":{"id":1,"icon":"faEnvelope","size":"lg","spin":false,"className":""}}
+        ]
+    },
+    "loginLink":{"id":"Login","name":"Login","link":"login","className":"nav-link"}
+}

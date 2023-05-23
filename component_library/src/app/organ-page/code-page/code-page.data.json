@@ -1,0 +1,23 @@
+{
+    "id":"1",
+    "className":"col-sm-12 mx-auto m-3",
+    "codeForm":
+    {
+        "id":"Code",
+        "title":"Code",
+        "message":"",
+        "action":"Code",
+        "className":"col m-2",
+        "submit":{"id":"1","name":"Submit","className":"w-100 btn btn-lg btn-info mt-1","type":"submit","disable":true,"show":false,
+        "icon":{"id":31,"icon":"faSpinner","size":"lg","spin":true,"className":""}},
+        "fields":[
+            {"id":"1","name":"code","className":"col-sm-12",
+            "errors":[
+                {"name":"required","message":"Code is required.","pattern":""},
+                {"name":"pattern","message":"Provide exactly six digits","pattern":"^[0-9]{6}$"}
+            ],"type":"text","text":"","placeholder":"code","readonly":false,"label":"Code","icon":{"id":1,"icon":"faMessage","size":"lg","spin":false,"className":""}}
+        ]
+    },
+    "resend":false,
+    "loginLink":{"id":1,"name":"Login","className":"nav-link","link":"login"}
+}

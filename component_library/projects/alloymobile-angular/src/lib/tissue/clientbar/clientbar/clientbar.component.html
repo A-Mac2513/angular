@@ -1,0 +1,52 @@
+<header [id]="_clientBar.id" [class]="_clientBar.className">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid justify-content-between">
+      <div class="mx-2 d-flex">
+        <!-- Responsive navbar toggler -->
+        <button 
+        class="navbar-toggler ms-auto bar" 
+        type="button" 
+        data-bs-toggle="offcanvas" 
+        data-bs-target="#offcanvasExample" 
+        aria-controls="offcanvasExample" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-animation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+      </button>
+      <alloy-button-icon
+      [buttonIcon]="_clientBar.backButton"
+      (output)="output.emit($event)"
+    ></alloy-button-icon>
+      </div>
+      <ng-container *ngIf="_clientBar.client.name != ''; then loggedIn">
+      </ng-container>
+        <ng-template #loggedIn>
+          <div class="text-center dropdown">
+            <button
+              class="btn btn-outline-dark btn-sm border-1 mx-1 dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <alloy-icon [icon]="clientIcon"></alloy-icon>
+              <small class="p-1">{{ _clientBar.client.name }}</small>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li *ngFor="let role of roles; index as i">
+                <alloy-link [link]="role"></alloy-link>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li>
+                <alloy-link [link]="logout"></alloy-link>
+              </li>
+            </ul>
+          </div>
+        </ng-template>
+      </div>
+  </nav>
+</header>

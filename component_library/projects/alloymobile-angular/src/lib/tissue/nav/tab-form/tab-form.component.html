@@ -1,0 +1,34 @@
+<div [id]="_tabForm.id" [class]="_tabForm.className">
+    <div class="row">
+        <div [class]="_tabForm.tabClass">
+            <div class="nav-item" *ngFor="let i of _tabForm.tabs">
+                <alloy-button-icon [buttonIcon]="i" (output)="getSelected(i)"></alloy-button-icon>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div [class]="_tabForm.formClass">
+            <div class="text-center">
+                <h3>{{_tabForm.title}}</h3>
+                <div [class]="_tabForm.messageClass" *ngIf="_tabForm.message != ''">{{ _tabForm.message }}</div>
+                <div [ngSwitch]="_tabForm.type">
+                    <div *ngSwitchCase="'AlloyInputTextIcon'">
+                        <alloy-input-icon-texts [inputIconTexts]="_tabForm.fields" (output)="getText($event)"></alloy-input-icon-texts>
+                    </div>
+                    <div *ngSwitchCase="'AlloyInputFloatingText'">
+                        <alloy-input-floating-texts [inputFloatingTexts]="_tabForm.fields" (output)="getText($event)"></alloy-input-floating-texts>
+                    </div>
+                    <div *ngSwitchCase="'AlloyInputText'">
+                        <alloy-input-texts [inputTexts]="_tabForm.fields" (output)="getText($event)"></alloy-input-texts>
+                    </div>
+                    <div *ngSwitchDefault>
+                        <alloy-input-icon-texts [inputIconTexts]="_tabForm.fields" (output)="getText($event)"></alloy-input-icon-texts>
+                    </div>
+                </div>
+                <div [class]="_tabForm.actionClass">
+                    <alloy-button-icon  *ngFor="let action of _tabForm.actions" [buttonIcon]="action" (output)="submitData(action.id)"></alloy-button-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

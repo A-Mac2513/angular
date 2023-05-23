@@ -1,0 +1,178 @@
+<form
+  [formGroup]="inputForm"
+  (ngSubmit)="output.emit(inputForm.value)"
+  #form="ngForm"
+>
+  <div class="row">
+    <div [class]="_inputText.className">
+      <div [ngSwitch]="_inputText.type">
+        <div *ngSwitchCase="'text'">
+          <label [for]="_inputText.id" class="form-label m-2">{{_inputText.label}}</label>
+            <input
+              [id]="_inputText.id"
+              [type]="_inputText.type"
+              [formControlName]="_inputText.name"
+              [placeholder]="_inputText.placeholder"
+              [readonly]="_inputText.readonly"
+              class="form-control"
+              (input)="formOutput()"
+            />
+        </div>
+        <div *ngSwitchCase="'email'">
+          <label [for]="_inputText.id" class="form-label m-2">{{_inputText.label}}</label>
+            <input
+              [id]="_inputText.id"
+              [type]="_inputText.type"
+              [formControlName]="_inputText.name"
+              [placeholder]="_inputText.placeholder"
+              [readonly]="_inputText.readonly"
+              class="form-control"
+              (input)="formOutput()"
+            />
+        </div>
+        <div *ngSwitchCase="'password'">
+          <label [for]="_inputText.id" class="form-label m-2">{{_inputText.label}}</label>
+            <input
+              [id]="_inputText.id"
+              [type]="_inputText.type"
+              [formControlName]="_inputText.name"
+              [placeholder]="_inputText.placeholder"
+              [readonly]="_inputText.readonly"
+              class="form-control"
+              (input)="formOutput()"
+            />
+        </div>
+        <div *ngSwitchCase="'file'">
+          <label [for]="_inputText.id" class="form-label m-2">{{_inputText.label}}</label>
+          <input
+            [id]="_inputText.id"
+            [type]="_inputText.type"
+            [placeholder]="_inputText.placeholder"
+            [readonly]="_inputText.readonly"
+            class="form-control"
+            (change)="onFileChange($event, _inputText)"
+            multiple
+          />
+        </div>
+        <div *ngSwitchCase="'number'">
+          <label [for]="_inputText.id" class="form-label m-2">{{_inputText.label}}</label>
+            <input
+              [id]="_inputText.id"
+              [type]="_inputText.type"
+              [formControlName]="_inputText.name"
+              [placeholder]="_inputText.placeholder"
+              [readonly]="_inputText.readonly"
+              class="form-control"
+              (input)="formOutput()"
+            />
+        </div>
+        <div *ngSwitchCase="'search'">
+          <label [for]="_inputText.id" class="form-label m-2">{{_inputText.label}}</label>
+            <input
+              [id]="_inputText.id"
+              [type]="_inputText.type"
+              [formControlName]="_inputText.name"
+              [placeholder]="_inputText.placeholder"
+              [readonly]="_inputText.readonly"
+              class="form-control"
+              (input)="formOutput()"
+            />
+        </div>
+        <div *ngSwitchCase="'date'">
+          <label [for]="_inputText.id" class="form-label m-2">{{_inputText.label}}</label>
+            <input
+              [id]="_inputText.id"
+              [type]="_inputText.type"
+              [formControlName]="_inputText.name"
+              [placeholder]="_inputText.placeholder"
+              [readonly]="_inputText.readonly"
+              class="form-control"
+              (input)="formOutput()"
+            />
+        </div>
+        <div *ngSwitchCase="'textarea'">
+          <label [for]="_inputText.id"  class="form-label m-2">{{ _inputText.label }}</label>
+            <textarea
+              [id]="_inputText.id"
+              [formControlName]="_inputText.name"
+              [placeholder]="_inputText.placeholder"
+              [readonly]="_inputText.readonly"
+              class="form-control"
+              [style.height]="_inputText.height"
+              (input)="formOutput()"
+            ></textarea>
+        </div>
+        <div *ngSwitchCase="'select'">
+          <label [for]="_inputText.id">{{ _inputText.label }}</label>
+          <select
+            [id]="_inputText.id"
+            [formControlName]="_inputText.name"
+            [placeholder]="_inputText.placeholder"
+            aria-label="Floating label select"
+            class="form-select"
+            (change)="formOutput()"
+          >
+            <option selected></option>
+            <option
+              *ngFor="let option of _inputText.options"
+              [value]="option"
+            >
+              {{ option }}
+            </option>
+          </select>
+        </div>
+        <div *ngSwitchCase="'checkbox'">
+          <div class="form-check">
+            <input
+              [id]="_inputText.id"
+              [type]="_inputText.type"
+              [formControlName]="_inputText.name"
+              class="form-check-input"
+              (change)="selectCheck($event, _inputText)"
+            />
+            <label [for]="_inputText.id" class="form-check-label">{{
+              _inputText.label
+            }}</label>
+          </div>
+        </div>
+        <div *ngSwitchCase="'radio'">
+          <div class="form-check">
+            <input
+              [id]="_inputText.id"
+              [type]="_inputText.type"
+              [formControlName]="_inputText.name"
+              [name]="_inputText.name"
+              class="form-check-input"
+              (change)="selectedRadio(_inputText)"
+            />
+            <label [for]="_inputText.id" class="form-check-label">{{
+              _inputText.label
+            }}</label>
+          </div>
+        </div>
+        <div *ngSwitchDefault>
+          <label [for]="_inputText.id" class="form-label m-2">{{_inputText.label}}</label>
+            <input
+              [id]="_inputText.id"
+              [type]="_inputText.type"
+              [formControlName]="_inputText.name"
+              [placeholder]="_inputText.placeholder"
+              [readonly]="_inputText.readonly"
+              class="form-control"
+              (input)="formOutput()"
+            />
+        </div>
+      </div>
+      <div
+        *ngIf="getTouched(_inputText.name)"
+        class="alert text-start alert-text-danger m-0 p-0"
+      >
+        <div *ngIf="getError(_inputText)">
+          <div *ngFor="let error of errors">
+            {{ error }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

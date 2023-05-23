@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 text-center border-end border-dark border-2">
+          <h4>Footer</h4>
+          <div class="row">
+            <div class="col-12" (click)="footerClick(footer)">
+                <alloy-footer [footer]="footer"></alloy-footer>
+            </div>
+          </div>
+      </div>
+      <div class="col-sm-6 text-center text-wrap">
+        <h4>Usage</h4>
+        <div class="container-fluid d-flex flex-column">
+            <div class="m-2">
+              <h6 class="border border-dark rounded-pill p-2">{{usageString}}</h6>
+            </div>
+            <div class="m-2">
+              <div class="form-group p-2">
+                <label for="tryOut">Try Out</label>
+                <textarea type="text" class="form-control border border-dark rounded" id="tryOut" rows="20" [(ngModel)]="exampleData" (blur)="update()"></textarea>
+              </div>
+            </div>
+        </div>   
+      </div>
+  </div>
+</div>

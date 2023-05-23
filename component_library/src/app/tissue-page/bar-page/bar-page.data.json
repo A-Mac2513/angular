@@ -1,0 +1,106 @@
+{
+    "tabBar":{
+        "id":"tabBar",
+        "className":"nav nav-tabs nav-fill justify-content-center",
+        "selected":"active",
+        "tabs":[
+            {"id":"tab1","name":"Link Bar","className":"nav-link text-dark","active":"","type":"button","icon":{"id":"icon1","icon":"faKeyboard","size":"sm","spin":false,"className":""}},
+            {"id":"tab2","name":"Button Bar","className":"nav-link text-dark","active":"","type":"button","icon":{"id":"icon2","icon":"faKeyboard","size":"sm","spin":false,"className":""}}
+        ]
+    },
+    "buttonBar":
+    {
+        "id": "buttonBar1",
+        "className": "d-flex justify-content-center",
+        "selected": "active",
+        "type": "AlloyButton",
+        "buttons": 
+        [
+            {"name":"Home","className":"btn btn-outline-dark rounded px-1 mx-1 shadow","active":"","type":"button"},
+            {"name":"About","className":"btn btn-outline-dark rounded px-1 mx-1 shadow","active":"","type":"button"},
+            {"name":"Terms","className":"btn btn-outline-dark rounded px-1 mx-1 shadow","active":"","type":"button"},
+            {"name":"Privacy","className":"btn btn-outline-dark rounded px-1 mx-1 shadow","active":"","type":"button"},
+            {"name":"Blog","className":"btn btn-outline-dark rounded px-1 mx-1 shadow","active":"","type":"button"},
+            {"name":"Contact","className":"btn btn-outline-dark rounded px-1 mx-1 shadow","active":"","type":"button"}
+        ]
+    },
+    "buttonIconBar":
+    {
+        "id": "buttonBar1",
+        "className": "d-flex justify-content-center",
+        "selected": "active",
+        "type": "AlloyButtonIcon",
+        "buttons": 
+        [
+            {"name":"Home","className":"btn btn-primary rounded-pill px-1 mx-1 shadow","active":"","type":"button","icon":{"icon":"faHome","size":"lg","spin":false,"className":"text-secondary"}},
+            {"name":"About","className":"btn btn-primary rounded-pill px-1 mx-1 shadow","active":"","type":"button","icon":{"icon":"faTableColumns","size":"lg","spin":false,"className":"text-secondary"}},
+            {"name":"Terms","className":"btn btn-primary rounded-pill px-1 mx-1 shadow","active":"","type":"button","icon":{"icon":"faUser","size":"lg","spin":false,"className":"text-secondary"}},
+            {"name":"Privacy","className":"btn btn-primary rounded-pill px-1 mx-1 shadow","active":"","type":"button","icon":{"icon":"faUserLock","size":"lg","spin":false,"className":"text-secondary"}},
+            {"name":"Blog","className":"btn btn-primary rounded-pill px-1 mx-1 shadow","active":"","type":"button","icon":{"icon":"faPhoneAlt","size":"lg","spin":false,"className":"text-secondary"}},
+            {"name":"Contact","className":"btn btn-primary rounded-pill px-1 mx-1 shadow","active":"","type":"button","icon":{"icon":"faMicrochip","size":"lg","spin":false,"className":"text-secondary"}}
+        ]
+    },
+    "iconBar":
+    {
+        "id": "buttonBar1",
+        "className": "d-flex justify-content-center",
+        "selected": "active",
+        "type": "AlloyIconButton",
+        "buttons": 
+        [
+            {"name": "Button","className": "btn btn-lg btn-info mx-1","type": "button","active": "","icon": {"id": "icon3134","classname": "","icon": "faMicrochip","size": "lg","spin": false}},
+            {"name": "Button","className": "btn btn-lg btn-info mx-1","type": "button","active": "","icon": {"id": "icon3134","classname": "","icon": "faMicrochip","size": "lg","spin": false}},
+            {"name": "Button","className": "btn btn-lg btn-info mx-1","type": "button","active": "","icon": {"id": "icon3134","classname": "","icon": "faMicrochip","size": "lg","spin": false}},
+            {"name": "Button","className": "btn btn-lg btn-info mx-1","type": "button","active": "","icon": {"id": "icon3134","classname": "","icon": "faMicrochip","size": "lg","spin": false}},
+            {"name": "Button","className": "btn btn-lg btn-info mx-1","type": "button","active": "","icon": {"id": "icon3134","classname": "","icon": "faMicrochip","size": "lg","spin": false}},
+            {"name": "Button","className": "btn btn-lg btn-info mx-1","type": "button","active": "","icon": {"id": "icon3134","classname": "","icon": "faMicrochip","size": "lg","spin": false}}
+        ]
+    },
+    "linkBar":
+    {
+        "id": "linkBar1",
+        "className": "d-flex justify-content-center",
+        "selected": "active",
+        "type": "AlloyLink",
+        "links": 
+        [
+            {"name":"Home","className":"btn btn-outline-primary rounded px-1 mx-1 shadow","active":"","link":"/tissue"},
+            {"name":"About","className":"btn btn-outline-primary rounded px-1 mx-1 shadow","active":"","link":"/tissue"},
+            {"name":"Terms","className":"btn btn-outline-primary rounded px-1 mx-1 shadow","active":"","link":"/tissue"},
+            {"name":"Privacy","className":"btn btn-outline-primary rounded px-1 mx-1 shadow","active":"","link":"/tissue"},
+            {"name":"Blog","className":"btn btn-outline-primary rounded px-1 mx-1 shadow","active":"","link":"/tissue"},
+            {"name":"Contact","className":"btn btn-outline-primary rounded px-1 mx-1 shadow","active":"","link":"/tissue"}
+        ]
+    },
+    "linkIconBar":
+    {
+        "id": "linkBar2",
+        "className": "d-flex justify-content-center",
+        "selected": "active",
+        "type": "AlloyLinkIcon",
+        "links": 
+        [
+            {"name":"Home","className":"btn btn-primary rounded-pill px-1 mx-1 shadow","active":"","link":"/tissue","icon":{"icon":"faHome","size":"lg","spin":false,"className":"text-secondary"}},
+            {"name":"About","className":"btn btn-primary rounded-pill px-1 mx-1 shadow","active":"","link":"/tissue","icon":{"icon":"faTableColumns","size":"lg","spin":false,"className":"text-secondary"}},
+            {"name":"Terms","className":"btn btn-primary rounded-pill px-1 mx-1 shadow","active":"","link":"/tissue","icon":{"icon":"faUser","size":"lg","spin":false,"className":"text-secondary"}},
+            {"name":"Privacy","className":"btn btn-primary rounded-pill px-1 mx-1 shadow","active":"","link":"/tissue","icon":{"icon":"faUserLock","size":"lg","spin":false,"className":"text-secondary"}},
+            {"name":"Blog","className":"btn btn-primary rounded-pill px-1 mx-1 shadow","active":"","link":"/tissue","icon":{"icon":"faPhoneAlt","size":"lg","spin":false,"className":"text-secondary"}},
+            {"name":"Contact","className":"btn btn-primary rounded-pill px-1 mx-1 shadow","active":"","link":"/tissue","icon":{"icon":"faMicrochip","size":"lg","spin":false,"className":"text-secondary"}}
+        ]
+    },
+    "iconLinkBar":
+    {
+        "id": "linkBar3",
+        "className": "d-flex justify-content-center",
+        "selected": "active",
+        "type": "AlloyIconLink",
+        "links": 
+        [
+            {"name": "Facebook","active":"","className":"btn btn-outline-dark btn-sm p-2 mx-2","link":"https://www.facebook.com/","icon":{"icon":"faFacebook","size":"2x","spin":false,"className":""}},
+            {"name": "Twitter","active":"","className":"btn btn-outline-dark btn-sm p-2 mx-2","link":"https://twitter.com/","icon":{"icon":"faTwitter","size":"2x","spin":false,"className":""}},
+            {"name": "Youtube","active":"","className":"btn btn-outline-dark btn-sm p-2 mx-2","link":"https://www.youtube.com/","icon":{"icon":"faYoutube","size":"2x","spin":false,"className":""}},
+            {"name": "Linkedin","active":"","className":"btn btn-outline-dark btn-sm p-2 mx-2","link":"https://www.linkedin.com/","icon":{"icon":"faLinkedin","size":"2x","spin":false,"className":""}},
+            {"name": "Instagram","active":"","className":"btn btn-outline-dark btn-sm p-2 mx-2","link":"https://www.instagram.com/","icon":{"icon":"faInstagram","size":"2x","spin":false,"className":""}}
+        ]
+    }
+}

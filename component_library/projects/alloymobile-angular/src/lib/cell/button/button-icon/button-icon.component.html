@@ -1,0 +1,10 @@
+<button
+  [id]="_buttonIcon.id"
+  [class]="_buttonIcon.className+' '+ _buttonIcon.active"
+  [type]="_buttonIcon.type"
+  (click)="output.emit(_buttonIcon)"
+>
+  <alloy-icon [icon]="_buttonIcon.icon" ></alloy-icon>
+  <span class="px-2">{{_buttonIcon.name}}</span>
+</button>
+

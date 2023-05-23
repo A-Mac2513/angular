@@ -1,0 +1,41 @@
+<table [class]="_tableAction.className" [id]="_tableAction.id">
+  <caption class="caption-top text-center">
+    {{
+      _tableAction.name
+    }}
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Type</th>
+      <th scope="col" *ngFor="let h of _tableAction.rows[0] | keyvalue">
+        <span *ngIf="h.key != 'id'">{{ capitalize(h.key) }}</span>
+      </th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let body of _tableAction.rows; index as j">
+      <td>
+        <alloy-icon [icon]="_tableAction.icon"></alloy-icon>
+      </td>
+      <td
+        class="cursor"
+        *ngFor="let col of body | keyvalue"
+        [routerLink]="[_tableAction.link + '/' + body.id]"
+      >
+        <a *ngIf="col.key != 'id'">{{ col.value }}</a>
+      </td>
+      <td>
+        <div class="btn-group" role="group" aria-label="Edit and Delete">
+          <button
+            *ngFor="let i of _tableAction.actions"
+            class="btn btn-outline-dark btn-sm border-0 mx-1"
+            (click)="getAction(i.id, body)"
+          >
+            <alloy-icon [icon]="i"></alloy-icon>
+          </button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

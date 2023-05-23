@@ -1,0 +1,30 @@
+<form
+  [formGroup]="inputForm"
+  (ngSubmit)="output.emit(inputForm.value)"
+  #form="ngForm"
+>
+  <div
+    [class]="_inputTextIconLabel.className"
+  >
+    <div class="form-floating ms-4 border-0">
+        <input
+        [id]="_inputTextIconLabel.id"
+        [type]="_inputTextIconLabel.type"
+        [formControlName]="_inputTextIconLabel.name"
+        [placeholder]="_inputTextIconLabel.placeholder"
+        [readonly]="_inputTextIconLabel.readonly"
+        class="form-control border-0"
+        />
+        <label [for]="_inputTextIconLabel.id">{{ _inputTextIconLabel.label }}</label>
+    </div>
+    <span class="input-group-text my-1 rounded-pill bg-white border-0">
+      <button
+        class="input-group-text p-0 border-0 bg-white"
+        type="button"
+        (click)="output.emit(inputForm.value)"
+        >
+        <alloy-icon [icon]="_inputTextIconLabel.icon"></alloy-icon>
+      </button>
+    </span>
+  </div>
+</form>

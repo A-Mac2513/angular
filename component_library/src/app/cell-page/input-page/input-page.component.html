@@ -1,0 +1,47 @@
+<div class="container-fluid">
+    <div class="row mt-2">
+        <div class="col-sm-4 border">
+            <h1 class="text-center">Input</h1>
+            <alloy-tab-button [tabButton]="usageBar" (output)="getSelected($event)"></alloy-tab-button>
+            <div class="m-2" *ngIf="tab.id == 'tab1'">
+                <div class="m-2" *ngFor="let input of inputIcons">
+                    <div (click) ="inputClick(input)">
+                        <alloy-input-icon-text [inputIconText]="input" (output)="onInput($event)"></alloy-input-icon-text>
+                    </div>
+                </div>
+            </div>
+            <div class="m-2" *ngIf="tab.id == 'tab2'">
+                <div class="m-2" *ngFor="let input of inputFloatingTexts">
+                    <div (click) ="inputClick(input)">
+                        <alloy-input-floating-text [inputFloatingText]="input" (output)="onInput($event)"></alloy-input-floating-text>
+                    </div>
+                </div>
+            </div>
+            <div class="m-2" *ngIf="tab.id == 'tab3'">
+                <div class="m-2" *ngFor="let input of inputTexts">
+                    <div (click) ="inputClick(input)">
+                        <alloy-input-text [inputText]="input" (output)="onInput($event)"></alloy-input-text>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8 text-center border">
+            <h1>Usage</h1>
+            <div class="container-fluid d-flex flex-column">
+                <div class="m-2">
+                    <p class="border border-dark rounded-pill p-2">{{usageString}}</p>
+                  </div>
+                  <div class="m-2 text-wrap">
+                    <h6>Output</h6>
+                    <p class="border border-dark rounded-pill p-2">{{outputString}}</p>
+                  </div>
+                  <div class="m-2">
+                    <div class="form-group p-2">
+                      <label for="tryOut">Try Out</label>
+                      <textarea type="text" class="form-control border border-dark rounded" id="tryOut" rows="25" [(ngModel)]="exampleData" (blur)="update()"></textarea>
+                    </div>
+                  </div>
+            </div> 
+        </div>
+    </div>
+</div>

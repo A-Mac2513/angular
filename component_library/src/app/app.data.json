@@ -1,0 +1,80 @@
+{
+  "homeForm":{
+    "id":"homeForm",
+    "title":"Add a Home",
+    "message":"",
+    "action":"Add",
+    "className":"col m-2",
+    "previous":{"id":"tab1","name":"Add Home","className":"nav-link fs-5 d-flex justify-content-between flex-row-reverse","type":"button","active":"","icon":{"id":"icon1","icon":"faPlay","size":"lg","spin":false,"className":""}},
+    "next":{"id":"tab1","name":"Add Home","className":"nav-link fs-5 d-flex justify-content-between flex-row-reverse","type":"button","active":"","icon":{"id":"icon1","icon":"faPlay","size":"lg","spin":false,"className":""}},
+    "type":"AlloyInputTextIcon",
+    "texts":[],
+    "fields":[
+      {"id":"home1","name":"details","className":"col-lg-12","type":"textarea","text":"","height":"100px","placeholder":"Home Details","readonly":false,"label":"Home Details*",
+      "errors":[
+          {"name":"required","message":"Home details is required.","pattern":""}             
+        ]
+      },
+      {"id":"home2","name":"image","className":"col-lg-12",
+      "errors":[
+          {"name":"required","message":"Image is required.","pattern":""}             
+          ],"type":"file","text":"","placeholder":"Add a image","readonly":false,"label":"Add a image*","icon":{"id":1,"icon":"faCamera","size":"lg","spin":false,"className":""}
+      },
+      {"id":"home3","name":"address","className":"col-lg-12 border-top border-dark mt-3 pt-3",
+      "errors":[
+          {"name":"required","message":"Complete address is required.","pattern":""}             
+          ],"type":"text","text":"","placeholder":"address","readonly":false,"label":"Address*","icon":{"id":1,"icon":"faAddressCard","size":"lg","spin":false,"className":""}
+      },
+      {"id":"home4","name":"city","className":"col-lg-6",
+      "errors":[
+          {"name":"required","message":"City is required.","pattern":""}             
+          ],"type":"text","text":"","placeholder":"city","readonly":false,"label":"City*","icon":{"id":1,"icon":"faLocation","size":"lg","spin":false,"className":""}
+      },
+      {"id":"home7","name":"postalCode","className":"col-lg-6",
+      "errors":[
+          {"name":"required","message":"Postal code is required.","pattern":""}             
+          ],"type":"text","text":"","placeholder":"postalCode","readonly":false,"label":"Postal Code*","icon":{"id":1,"icon":"faMapPin","size":"lg","spin":false,"className":""}
+      },
+      {"id":"home5","name":"province","className":"col-lg-6","type":"select","text":"","placeholder":"province","readonly":false,"label":"Province*",
+      "options":["ON"],
+      "errors":[
+          {"name":"required","message":"Province is required.","pattern":""}             
+          ]
+      },
+      {"id":"home6","name":"country","className":"col-lg-6","type":"select","text":"","placeholder":"country","readonly":false,"label":"Country*",
+      "options":["Canada"],
+      "errors":[
+          {"name":"required","message":"Country is required.","pattern":""}             
+          ]
+      }         
+    ]
+  },
+  "clientBar":{
+    "id":1,
+    "className":"navbar-light navbar-sticky border-bottom",
+    "backButton":{"id":"1","name":"Back","className":"btn btn-outline-dark border-0","icon":{"id":31,"icon":"faArrowLeftLong","size":"lg","spin":false,"className":""}},
+    "clientButton":{"id":"dropdownMenuButton1","name":"Client","className":"btn btn-outline-dark border-0","icon":{"id":31,"icon":"faUser","size":"lg","spin":false,"className":""}}
+  },
+
+  "navBar":{
+    "id":1,
+    "className":"navbar-light navbar-sticky border-bottom",
+    "logo":{"id":1,"name":"AlloyMobile","className":"navbar-brand me-0 text-dark fs-2","link":"https://alloymobile.com","logo":{"image":"https://alloymobile.blob.core.windows.net/alloymobile/alloymobile.png","alt":"AlloyMobile","width":"64","height":"auto"}},
+    "linkIcon":
+    [
+      {"id":1,"name":"Home","className":"btn btn-outline-dark border-0 rounded px-1","link":"","icon":{"id":1,"icon":"faHome","size":"lg","spin":false,"className":""}},
+      {"id":2,"name":"About us","className":"btn btn-outline-dark border-0 rounded px-1","link":"about","icon":{"id":2,"icon":"faUser","size":"lg","spin":false,"className":""}},
+      {"id":6,"name":"Contact us","className":"btn btn-outline-dark border-0 rounded px-1","link":"contact","icon":{"id":4,"icon":"faEnvelope","size":"lg","spin":false,"className":""}}
+    ]
+  },
+  "tabBar":{
+    "id":"tabBar",
+    "className":"nav nav-pills nav-fill",
+    "selected":"border-bottom border-5 border-dark",
+    "tabs":[
+        {"id":"tab1","name":"Cell","className":"nav-link text-dark fs-3","active":"","link":"","icon":{"id":"icon1","icon":"faSquare","size":"sm","spin":false,"className":""}},
+        {"id":"tab2","name":"Tissue","className":"nav-link text-dark fs-3","active":"","link":"tissue","icon":{"id":"icon2","icon":"faCube","size":"sm","spin":false,"className":""}},
+        {"id":"tab3","name":"Organ","className":"nav-link text-dark fs-3","active":"","link":"organ","icon":{"id":"icon3","icon":"faCubes","size":"sm","spin":false,"className":""}}
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+<button
+  [id]="_iconButton.id"
+  [class]="_iconButton.className"
+  type = "button"
+  (click)="output.emit(_iconButton)"
+  data-bs-toggle="tooltip" 
+  data-bs-placement="bottom" 
+  [title]="_iconButton.name">
+  <alloy-icon [icon]="_iconButton.icon" ></alloy-icon>
+</button>

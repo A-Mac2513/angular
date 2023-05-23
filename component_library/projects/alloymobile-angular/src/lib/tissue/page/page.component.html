@@ -1,0 +1,30 @@
+  <!--Pagignation links-->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end">
+      <li class="page-item" *ngIf="!_page.first">
+        <a
+          class="page-link "
+          [routerLink]=""
+          (click)="nextPage(_page.pageNumber - 1)"
+          >Previous</a
+        >
+      </li>
+      <li
+        class="page-item"
+        *ngFor="let p of _page.pages"
+        [class.active]="p === _page.pageNumber"
+      >
+        <a class="page-link" [routerLink]="" (click)="nextPage(p)">{{
+          p + 1
+        }}</a>
+      </li>
+      <li class="page-item"  *ngIf="!_page.last">
+        <a
+          class="page-link"
+          [routerLink]=""
+          (click)="nextPage(_page.pageNumber + 1)"
+          >Next</a
+        >
+      </li>
+    </ul>
+  </nav>

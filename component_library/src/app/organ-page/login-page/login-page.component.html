@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 text-center border-end border-dark border-2">
+        <alloy-login [login]="login" (output)="onLogin($event)"></alloy-login>
+      </div>
+      <div class="col-sm-6 text-center text-wrap">
+          <h4>Usage</h4>
+          <div class="container-fluid d-flex flex-column">
+              <div class="m-2">
+                <p class="border border-dark rounded-pill p-2">{{usageString}}</p>
+              </div>
+              <div class="m-2 text-wrap">
+                <h6>Output</h6>
+                <p class="border border-dark rounded-pill p-2">{{outputString}}</p>
+              </div>
+              <div class="m-2">
+                <div class="form-group p-2">
+                  <label for="tryOut">Try Out</label>
+                  <textarea type="text" class="form-control border border-dark rounded" id="tryOut" rows="10" [(ngModel)]="exampleData" (blur)="update()"></textarea>
+                </div>
+              </div>
+          </div>          
+      </div>
+  </div>
+</div>
+
+

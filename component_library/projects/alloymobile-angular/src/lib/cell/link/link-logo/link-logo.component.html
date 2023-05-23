@@ -1,0 +1,4 @@
+<a [id]="_linkLogo.id" [routerLink]="" (click)="redirectLink()" [class]="_linkLogo.className+' '+ _linkLogo.active">
+    <img src = {{_linkLogo.logo.image}} [alt]="_linkLogo.logo.alt" [attr.width]="_linkLogo.logo.width" [attr.height]="_linkLogo.logo.height">
+    <span class="px-2">{{ _linkLogo.name }}</span>
+</a>

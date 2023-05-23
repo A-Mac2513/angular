@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 text-center text-wrap">
+        <h4>Usage</h4>
+        <div class="container-fluid d-flex flex-column">
+          <h6 class="border border-dark rounded-pill p-2">{{usageString}}</h6>
+          <div class="form-group p-2">
+            <label for="tryOut">Try Out</label>
+            <div class=" m-2">
+              <alloy-icon-link [iconLink]="example"></alloy-icon-link>
+            </div>
+            <textarea type="text" class="form-control border border-dark rounded" id="tryOut" rows="20" [(ngModel)]="exampleData" (blur)="update()"></textarea>
+          </div>
+        </div>          
+    </div>
+    <div class="col-sm-6 text-center border-start border-dark border-2">
+      <h4>Icons</h4>
+      <div class="row">
+        <div class="col-12 p-3">
+          <alloy-input-icon-text-label [inputIconTextLabel]="search" (output)="getText($event)"></alloy-input-icon-text-label>
+        </div>
+        <div class="col-12">
+          <div class="row">
+            <div class="col-sm-4 col-md-3 col-lg-2 p-1 text-center border rounded" *ngFor="let i of iconLinks">
+              <button class="btn btn-outline-dark" (focus)="iconClick(i)" (mouseenter)="iconClick(i)">
+                <alloy-icon-link [iconLink]="i"></alloy-icon-link>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

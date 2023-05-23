@@ -1,0 +1,39 @@
+<div
+  [id]="_buttonBar.id"
+  [class]="_buttonBar.className"
+  role="group"
+  [ngSwitch]="_buttonBar.type"
+>
+  <div *ngSwitchCase="'AlloyIconButton'">
+    <alloy-icon-button
+      [iconButton]="i"
+      *ngFor="let i of _buttonBar.buttons"
+      (output)="getSelected(i)"
+    >
+    </alloy-icon-button>
+  </div>
+  <div *ngSwitchCase="'AlloyButton'">
+    <alloy-button
+      [button]="i"
+      *ngFor="let i of _buttonBar.buttons"
+      (output)="getSelected(i)"
+    >
+    </alloy-button>
+  </div>
+  <div *ngSwitchCase="'AlloyButtonIcon'">
+    <alloy-button-icon
+      [buttonIcon]="i"
+      *ngFor="let i of _buttonBar.buttons"
+      (output)="getSelected(i)"
+    >
+    </alloy-button-icon>
+  </div>
+  <div *ngSwitchDefault>
+    <alloy-button
+      [button]="i"
+      *ngFor="let i of _buttonBar.buttons"
+      (output)="getSelected(i)"
+    >
+    </alloy-button>
+  </div>
+</div>

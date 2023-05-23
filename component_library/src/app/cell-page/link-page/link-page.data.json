@@ -1,0 +1,19 @@
+{
+    "example":
+    {
+        "id": "iconLink1",
+        "name":"AlloyMobile",
+        "className": "btn btn-outline-success btn-sm p-1",
+        "active":"",
+        "link": "https://alloymobile.com"
+    },
+    "links":
+    [
+        {"name":"Home","className":"btn btn-outline-dark rounded px-1 shadow","active":"","link":"link"},
+        {"name":"About","className":"btn btn-secondary rounded-circle px-1","active":"","link":"link"},
+        {"name":"Terms","className":"btn btn-primary rounded-pill px-1","active":"","link":"link"},
+        {"name":"Privacy","className":"btn btn-success border border-5 border-dark px-1","active":"","link":"link"},
+        {"name":"Blog","className":"fs-2 nav-link","active":"","link":"link"},
+        {"name":"Contact","className":"btn btn-outline-info border-0 btn-sm rounded px-1 shadow","active":"","link":"link"}
+    ]
+}

@@ -1,0 +1,3 @@
+<div [id]="_iconSideBar.id" [class]="_iconSideBar.className">
+    <alloy-link-icon *ngFor="let i of _iconSideBar.linkIcon" [linkIcon]="i" (output)="getSelected(i)" [attr.data-bs-dismiss]="_iconSideBar.close"></alloy-link-icon>
+</div>
